@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Single Tab Window",
+  "version": "0.1.0",
+  "minimum_chrome_version": "102",
+  "description": "Move newly created browser tabs into separate windows.",
+  "permissions": ["storage"],
+  "incognito": "split",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Single Tab Window: click to pause or resume"
+  }
+}
